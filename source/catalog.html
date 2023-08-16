@@ -1,34 +1,38 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-text cat-energy" src="img/icons/cat-energy.svg" width="118" height="21">
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-text cat-energy" src="img/icons/cat-energy.svg" width="118" height="21">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="nav">
+      <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
+      <div class="nav__wrapper">
+        <ul class="nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">главная</a>
+            <a class="site-list__link" href="index.html">главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">подбор программы</a>
+            <a class="site-list__link" href="form.html">подбор программы</a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <main class="main-container">
-    <h1 class="main-container__header">Каталог продукции</h1>
+    <h1 class="main-container__header big-header">Каталог продукции</h1>
     <section class="catalog">
       <ul class="catalog-list">
         <li class="catalog-list__item card">
@@ -103,8 +107,8 @@
           <button class="card-button main-button" type="button">заказать</button>
         </li>
         <li class="catalog-list__item card">
-          <h3 class="card-title ">Показать еще 100500 товаров</h3>
-          <span>На самом деле вкусов гораздо больше!</span>
+          <h3 class="card-title">Показать еще 100500 товаров</h3>
+          <span class="card-text">На самом деле вкусов гораздо больше!</span>
           <button class="card-button__more" type="button">показать все</button>
         </li>
       </ul>
@@ -131,20 +135,21 @@
           <button class="additional-list__item-button main-button">заказать</button>
         </li>
       </ul>
-      <div class="catalog-present present">
-        <p class="present-text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="catalog-present">
+        <p class="catalog-present__text">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
     <section class="contacts">
       <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
-      <span class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <div class="contacts__map"></div>
     </section>
   </main>
-  <footer class="main-footer">
-    <a class="main-footer__link" href="#">
-      <img class="cat-energy" src="img/icons/cat-energy.svg" width="128" height="24">
+  <footer class="footer">
+    <a class="footer__logo cat-energy" href="#">
+      <img class="cat-energy__img" src="img/icons/cat-energy.svg" width="128" height="24">
     </a>
-    <ul class="main-footer__social social-list">
+    <ul class="footer__social social-list">
       <li class="social-list__item">
         <a class="vk-link" href="#">
           <span class="visually-hidden">В контакте</span>
@@ -152,7 +157,7 @@
       </li>
       <li class="social-list__item">
         <a class="youtube-link" href="#">
-          <span class="visually-hidden">Youtube </span>
+          <span class="visually-hidden">Youtube</span>
         </a>
       </li>
       <li class="social-list__item">
@@ -161,9 +166,9 @@
         </a>
       </li>
     </ul>
-    <a class="academy-link" href="#">
-      <span class="academy-text">HTML Academy</span>
-      <img class="academy-logo" src="img/icons/htmlacademy.svg">
+    <a class="footer__academy" href="#">
+      <span class="footer__academy-text">HTML Academy</span>
+      <img class="footer__academy-logo" src="img/icons/htmlacademy.svg" width="27" height="34">
       <span class="visually-hidden">HTML Академия</span>
     </a>
   </footer>
